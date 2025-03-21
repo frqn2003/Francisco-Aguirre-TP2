@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -9,36 +9,74 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="flex relative h-screen">
-
-        <div class="bg-black text-white w-64 space-y-24 px-4 py-2">
-            <a href="#" class="flex mt-5 space-x-2 text-white justify-center items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                </svg>
-                <span class="text-2xl  font-bold">Menu</span>
-            </a>
-            <nav class="space-y-2 grid grid-rows-8 justify-center items-center text-center">
-                <a href="#" class="block py-4 px-4">Nombre</a>
-                <a href="" class="block py-4 px-4">Peruano</a>
-                <a href="" class="block py-4 px-4">Venezolano</a>
-                <a href="" class="block py-4 px-4">Mexicano</a>
-                <div class="row-start-8 block px-4 bottom-0">
-                    <div class="grid grid-cols-2 gap-2">
-                        <span>nombre</span>
-                        <span>apellido</span>
-                    </div>
+<body class="bg-gray-700">
+    <div class="flex relative bg-gray-700">
+        <!-- Sidebar -->
+        <div class="bg-black ml-2 rounded-2xl h-screen fixed text-white w-24 md:w-[12rem] flex flex-col px-4">
+            <!-- Parte superior (HTML) -->
+            <div class="pt-5">
+                <a href="#main" class="flex space-x-2 text-white justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:block hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                    </svg>
+                    <span class="text-2xl font-bold">HTML</span>
+                </a>
+            </div>
+        
+            <!-- Contenedor del menú con espacio distribuido -->
+            <div class="flex flex-col flex-grow justify-center space-y-6">
+                <a href="#introduccion" class="block space-x-2 flex justify-center items-center py-4 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>                      
+                    <span class="md:block hidden font-bold text-lg">Intro</span>
+                </a>
+                <a href="#" class="block space-x-2 flex justify-center items-center py-4 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                    </svg>                      
+                    <span class="md:block hidden font-bold text-lg">Elementos</span>
+                </a>
+                <a href="#" class="block space-x-2 flex justify-center items-center py-4 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                    </svg> <span class="md:block hidden font-bold text-lg">Atributos</span></a>
+                <a href="#" class="block space-x-2 flex justify-center items-center py-4 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="size-6" viewBox="0 0 48 48">
+                        <path fill="#00acc1" d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"></path>
+                        </svg>
+                    <span class="md:block hidden font-bold text-lg">TailwindCSS</span></a>
+            </div>
+        
+            <!-- Parte inferior (Nombre e icono) -->
+            <div class="pb-5">
+                <div class="flex flex-col items-center space-y-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 50 50">
+                        <path fill="#ffffff" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z"></path>
+                    </svg>
+                    <span class="text-sm text-center">Aguirre Francisco <br>2025</span>
                 </div>
-            </nav>
+            </div>
         </div>
-        <div>
-            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis aliquam vel consequatur tempore velit ipsa quasi est iure vero asperiores laudantium, aspernatur voluptatum ratione rem dolores iste inventore quam mollitia.</span>
+        
+
+        <!-- Contenido principal -->
+        <div class="md:ml-[14rem] ml-28 w-screen md:w-full bg-gray-200 min-h-screen p-4 space-y-2 grid grid-rows-2 place-items-start"
+            id="main">
+            <span
+                class="md:text-6xl text-3xl font-extrabold font-serif text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600 self-end ">¡Documentación<br>de HTML!</span>
+            <span class="md:text-2xl text-md self-start">Esta página está orientada a la documentación <br> de HTML, sus atributos, elementos y <br>TailwindCSS, el framework que se usa para la pagina.</span>
         </div>
-
-
+    </div>
+    <div class="ml-[14rem] bg-gray-200 bg-gradient-to-b from-gray-200  to-gray-400 min-h-screen p-4" id="introduccion">
+        <div class="mt-5 gap-2">
+            <h1 class="font-extrabold text-5xl font-serif">introduccion al html</h1>
+            <p class="text-xl mt-1 gap-2">HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript). </p>
+            <p class="mt-1 text-xl gap-2">Cada pagina HTML, consta de un conjunto de etiquetas que representan los componentes básicos de la pagina web. Con ellos creamos una jerarquía que estructura el contenido en secciones, párrafos, encabezados y otros bloques de contenidos. La mayoría de los elementos HTML tienen una apertura y un cierre que utilizan una sintaxis como la siguiente: <code>&lt;tag&gt;contenido&lt;/tag&gt;</code>
+            </p>
+        </div>
     </div>
 </body>
 
