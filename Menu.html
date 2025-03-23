@@ -5,15 +5,22 @@
   <meta charset="UTF-8" />
   <title>Menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="732212.png"/>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      ;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-700">
   <div class="flex relative bg-gray-700">
     <!-- Sidebar -->
     <div
-      class="bg-black ml-2 rounded-2xl h-screen fixed text-white w-16 sm:w-20 md:w-[12rem] flex flex-col px-2 sm:px-3 md:px-4 transition-all z-10">
+      class="bg-black dark:bg-gray-800 ml-2 rounded-2xl h-screen fixed text-white w-16 sm:w-20 md:w-[12rem] flex flex-col px-2 sm:px-3 md:px-4 transition-all z-10">
       <div class="pt-5">
         <a href="#main" class="flex space-x-2 text-white justify-center items-center">
           <img src="732212.png" class="size-6" alt="profile" />
@@ -70,47 +77,59 @@
               d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
             </path>
           </svg>
-          <span class="text-sm text-center">Aguirre Francisco <br />2025</span>
+          <span class="text-[0.6rem] md:text-sm text-center">Aguirre Francisco <br />2025</span>
         </div>
       </div>
     </div>
 
     <!-- Contenido principal -->
-    <div class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 min-h-screen p-4 w-full" id="main">
-      <div class="flex flex-col justify-center min-h-screen">
-        <span
-          class="md:text-6xl text-3xl font-extrabold font-serif bg-clip-text text-transparent text-gradient bg-gradient-to-r from-blue-500 to-purple-600">¡Documentación<br />de
-          HTML!</span>
-        <span class="md:text-2xl text-md">Esta página está orientada a la documentación <br />
-          de HTML, sus atributos, elementos y <br />TailwindCSS, el framework
-          que se usa para la pagina.</span>
+    <div class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 min-h-screen px-4 py-2 w-full" id="main">
+      <!-- Solución 2: Usando linear-gradient para crear una capa semitransparente -->
+      <div class="justify-center flex flex-col top-0 border-1 rounded-md p-2"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(html-color-codes-color-tutorials-hero.jpg); background-size: cover;">
+        <span class="md:text-3xl sm:text-2xl text-xl font-extrabold text-white">Documentación de HTML</span>
+        <span class="md:text-xl text-xs text-gray-100 mt-1">Esta página está orientada a la documentación de HTML, sus
+          atributos, elementos y TailwindCSS, el framework que se usa para la pagina.</span>
+      </div>
+      <div class="mt-2 space-y-1">
+        <h1 class="font-extrabold text-xl sm:text-2xl md:text-3xl">
+          Introduccion al HTML
+        </h1>
+        <p class="text-xs sm:text-base">
+          HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup
+          Language) es el componente más básico de la Web. Define el significado
+          y la estructura del contenido web. Además de HTML, generalmente se
+          utilizan otras tecnologías para describir la apariencia/presentación
+          de una página web (CSS) o la funcionalidad/comportamiento
+          (JavaScript).<br>
+          Cada pagina HTML, consta de un conjunto de etiquetas que representan
+          los componentes básicos de la pagina web. Con ellos creamos una
+          jerarquía que estructura el contenido en secciones, párrafos,
+          encabezados y otros bloques de contenidos. La mayoría de los elementos
+          HTML tienen una apertura y un cierre que utilizan una sintaxis como la
+          siguiente: <code>&lt;tag&gt;contenido&lt;/tag&gt;</code>.
+        </p>
+      </div>
+      <div class="font-extrabold text-md sm:text-2xl md:text-3xl my-1">
+        Estructura de Página HTML.
+      </div>
+      <div class="border-2 bg-gray-300 sm:mr-96 text-sm sm:text-base">
+        &lt;html&gt;<br>
+        <div class="border-2 mx-5 mb-5 border-gray-500 bg-gray-200 ">
+          &lt;head&gt;<br>La etiqueta <code><head></code> contiene metadatos e información sobre el documento que no se muestra directamente en la página: <br>
+          &lt;/head&gt;
+        </div>
+        <div class="border-2 border-gray-500 mx-5 bg-gray-200">
+          &lt;body&gt;<br> <br>
+          &lt;/body&gt;
+        </div>
+        &lt;/html&gt;
       </div>
     </div>
   </div>
   <div
     class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 bg-gradient-to-b from-gray-200 to-gray-400 min-h-screen p-4 sm:p-6 md:p-8"
     id="introduccion">
-    <div class="mt-5 space-y-4">
-      <h1 class="font-extrabold text-3xl sm:text-4xl md:text-5xl font-serif">
-        introduccion al html
-      </h1>
-      <p class="text-base sm:text-lg md:text-xl">
-        HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup
-        Language) es el componente más básico de la Web. Define el significado
-        y la estructura del contenido web. Además de HTML, generalmente se
-        utilizan otras tecnologías para describir la apariencia/presentación
-        de una página web (CSS) o la funcionalidad/comportamiento
-        (JavaScript).
-      </p>
-      <p class="text-base sm:text-lg md:text-xl">
-        Cada pagina HTML, consta de un conjunto de etiquetas que representan
-        los componentes básicos de la pagina web. Con ellos creamos una
-        jerarquía que estructura el contenido en secciones, párrafos,
-        encabezados y otros bloques de contenidos. La mayoría de los elementos
-        HTML tienen una apertura y un cierre que utilizan una sintaxis como la
-        siguiente: <code>&lt;tag&gt;contenido&lt;/tag&gt;</code>
-      </p>
-    </div>
   </div>
 </body>
 
