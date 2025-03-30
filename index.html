@@ -70,28 +70,28 @@
       </div>
 
       <!-- Parte inferior (pie de pagina) -->
-      <div class="pb-5">
-        <div class="flex flex-col items-center space-y-2">
+      <footer class="pb-5">
+        <a href="https://www.instagram.com/fran.agr/" class="flex flex-col items-center space-y-2">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="size-5 md:size-6" viewBox="0 0 50 50">
             <path fill="#ffffff"
               d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
             </path>
           </svg>
           <span class="text-[0.6rem] md:text-sm text-center">Aguirre Francisco <br />2025</span>
-        </div>
-      </div>
+        </a>
+      </footer>
     </div>
 
     <!-- Contenido principal -->
-    <div class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 min-h-screen px-4 py-2 w-full flex flex-col justify-evenly" id="main">
-      <div class="justify-center flex flex-col top-0 border-1 rounded-md p-2"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(html-color-codes-color-tutorials-hero.jpg); background-size: cover;">
+    <div class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 min-h-screen px-4 py-2 w-full flex flex-col justify-between" id="main">
+      <div class="justify-center flex flex-col top-0 border-1 rounded-md p-4"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(html-color-codes-color-tutorials-hero.jpg); background-size: cover;  background-position: top;">
         <span class="md:text-3xl sm:text-2xl text-xl font-extrabold text-white">Documentación de HTML</span>
         <span class="md:text-xl text-xs text-gray-100 mt-1">Esta página está orientada a la documentación de HTML, sus
           atributos, elementos y TailwindCSS, el framework que se usa para la pagina.</span>
       </div>
       <div class="mt-2 space-y-1">
-        <h1 class="font-extrabold text-xl sm:text-2xl md:text-3xl">
+        <h1 class="font-extrabold text-xl sm:text-2xl md:text-3xl mb-3">
           Introduccion al HTML
         </h1>
         <p class="text-xs sm:text-base">
@@ -110,7 +110,7 @@
         </p>
       </div>
       <div class="">
-        <h1 class="font-extrabold text-md sm:text-2xl md:text-3xl mb-2">Estructura de Página HTML.</h1>
+        <h1 class="font-extrabold text-md sm:text-2xl md:text-3xl mb-3">Estructura de Página HTML.</h1>
         <div class="border-2 bg-gray-300  text-sm sm:text-base">
           &lt;html&gt;<br>
           <div class="border-2 mx-5 mb-5 border-gray-500 bg-gray-200">
@@ -127,39 +127,34 @@
       </div>
     </div>
   </div>
-  <div class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 bg-gradient-to-b from-gray-200 to-gray-400 min-h-screen px-2 sm:px-3 md:px-4" id="etiquetas">
-    <div class="md:text-3xl sm:text-2xl text-xl font-extrabold text-black mb-2">Etiquetas de HTML</div>
-    <div class="overflow-auto">
-      <table class="min-w-full bg-white rounded-lg overflow-hidden">
-        <thead class="bg-gray-800 text-white">
-          <tr class="text-center ">
+  <div class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 bg-gradient-to-b px-4 from-gray-200 to-gray-400 min-h-screen sm:px-3 md:px-4 space-y-4" id="etiquetas">
+    <div class="md:text-3xl sm:text-2xl text-xl font-extrabold text-black ">Etiquetas de HTML</div>
+    <div class="relative overflow-auto max-h-svh md:h-dvh">
+      <table class="w-full bg-white rounded-lg overflow-hidden">
+        <thead class="bg-gray-800 text-white" style="position: sticky; top: 0; background-color: #1a202c; z-index: 10;">
+          <tr class="text-center">
             <th class="p-2">Tipo</th>
-            <th class="py-2 px-2">Etiqueta</th>
             <th class="py-2 px-2">Sintaxis</th>
-            <th class="py-2 px-2">Función</th>
+            <th class="py-2 px-2" >Función</th>
             <!-- <th class="py-2 px-2">Ejemplo</th> -->
           </tr>
         </thead>
         <tbody class="text-center bg-gray-200 ">
           <tr class="hover:bg-white border-gray-400 border-b-2">
-            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="3">Etiquetas head</td>
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;meta&gt;</td>
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="3">Etiquetas Meta</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;meta&gt;</td>
             <td class="py-2 text-xs md:text-base px-0">Controlan cómo deben rastrear e indexar el contenido los buscadores</td>
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;title&gt;&lt;/title&gt;</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;title&gt;Titulo&lt;/title&gt;</td>
             <td class="py-2 text-xs md:text-base px-0">Representa el titulo de la página</td>
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;link&gt;</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;link rel="icon" href="favicon.ico"&gt;</td>
             <td class="py-2 text-xs md:text-base px-0">Enlaza recursos externos como hojas de estilo CSS, iconos, fuentes, etc</td>
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
-            <td class="py-2 font-medium px-2 sm:px-0 hover:bg-gray-100 bg-gray-300 border-gray-400 border-r-2 " rowspan="10">Texto </td>
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;h1&gt; a &lt;h6&gt;</td>
+            <td class="py-2 font-medium px-2 sm:px-0 hover:bg-gray-100 bg-gray-300 border-gray-400 border-r-2 " rowspan="8">Texto </td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;h1&gt;Texto&lt;/h1&gt; &lt;h6&gt;Texto&lt;/h6&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Seccionas mas grandes de nivel 1 a nivel 6</td>
             <!-- <td class="py-2">
@@ -168,7 +163,6 @@
             </td> -->
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;p&gt;</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;p&gt;Texto&lt;/h1&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Parrafo de texto</td>
             <!-- <td class="py-2">
@@ -177,25 +171,126 @@
             </td> -->
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;span&gt;</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;span&gt;Texto&lt;/span&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Texto en linea. Sin estilos no es nada</td>
           </tr> 
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;em&gt;</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;em&gt;Texto <em>enfatizado</em>&lt;/em&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Texto en enfatizados</td>
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;strong&gt;</td>
-            <td class="py-2 text-sm px-2 sm:px-0">&lt;strong&gt;Texto en <strong>negrita</strong>&lt;strong&gt;</td>
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;strong&gt;Texto en <strong>negrita</strong>&lt;/strong&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Hace que el texto este en negrita</td>
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 font-medium px-2 sm:px-0">&lt;&gt;</td>
-            <td class="py-2 text-sm px-2 sm:px-0">&lt;&gt;&lt;&gt;</td>
-            <td class="py-2 px-2 sm:px-0 md:text-base text-sm"></td>
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;code&gt;console.log("Hola!")&lt;/code&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Establece codigo de programacion HTML, CSS,</td>
           </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;i&gt;Texto en <i>cursiva</i>&lt;/i&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Muestra texto con cursiva</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">Realiza un &lt;br&gt;<br>salto de linea</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un salto de linea.</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="5">Etiquetas de Estructura</td>
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;header&gt;   &lt;/header&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un contenedor para contenido introductorio o enlaces de navegación</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;nav&gt;   &lt;/nav&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una barra de navegación.</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;main&gt;  &lt;/main&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Especifica el contenido principal del documento</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;section&gt;  &lt;/section&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Define una sección del documento</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;footer&gt;&lt;/footer&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Define un pie de página</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="8">Etiquetas de Enlaces e Imagenes</td>
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;a&gt;href="(enlace)"&lt;/a&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Define un hipervinculo</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;img src="(imagen)"&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una imagen</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;picture&gt;&lt;/picture&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un contenedor para imagenes</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;figure&gt; &lt;/figura&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Especifica contenido independiente, como ilustraciones, diagramas, fotos, etc</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;figcaption&gt;&lt;/figcaption&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un pie de figura</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;audio src="(ejemplo)"&gt; &lt;/audio&gt;</td> 
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa contenido de sonido</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;video src="(ejemplo)"&gt; &lt;/video&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa contenido de video</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;iframe src="(ejemplo)"&gt;&lt;/iframe&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un marco para mostrar contenido externo</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="8">Etiquetas de Formulario</td>
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;form&gt;&lt;/form&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un formulario</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;input type="text"&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un campo de entrada</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;button&gt;&lt;/button&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un boton</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;select&gt;&lt;/select&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un campo de seleccion</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;option&gt;&lt;/option&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una opcion dentro de un campo de seleccion</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;textarea&gt;&lt;/textarea&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un campo de texto</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;label&gt;&lt;/label&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una etiqueta para un campo de formulario</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;fieldset&gt;&lt;/fieldset&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un grupo de campos de formulario</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="2">Etiquetas de Script</td>
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;script src="(archivo.js)"&gt;&lt;/script&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un script de JavaScript</td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;noscript&gt;&lt;/noscript&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa contenido alternativo para navegadores que no soportan JavaScript</td>
+          </tr>
+
         </tbody>
       </table>
     </div>
