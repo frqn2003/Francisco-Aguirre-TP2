@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="imagenes/732212.png" />
   <!-- Tailwind CSS CDN -->
-  
+
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style>
     body {
@@ -23,9 +23,10 @@
 </head>
 
 <body class="bg-gray-700">
+
   <div class="flex relative bg-gray-700">
     <!-- Sidebar -->
-    <nav class="bg-black dark:bg-gray-800 ml-2 rounded-2xl h-screen fixed text-white w-16 sm:w-20 md:w-[12rem] flex flex-col px-2 sm:px-3 md:px-4 transition-all z-10">
+    <nav class="bg-black dark:bg-gray-800 ml-2 rounded-2xl h-screen fixed text-white w-16 sm:w-20 md:w-[12rem] flex flex-col px-2 sm:px-3 md:px-4 transition-all z-10 mt-2">
       <div class="pt-5">
         <div href="#main" class="flex md:space-x-2 text-white justify-center items-center">
           <img src="imagenes/732212.png" class="size-6" alt="profile" />
@@ -63,7 +64,7 @@
           </svg>
           <span class="md:block hidden font-bold text-lg">Atributos</span>
         </a>
-        <a href="#"
+        <a href="tailwind.html"
           class="block md:space-x-2 flex justify-center items-center py-3 md:py-4 px-2 md:px-4 rounded-lg hover:bg-gray-800 transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="size-6 sm:size-7" viewBox="0 0 48 48">
             <path fill="#00acc1"
@@ -88,10 +89,12 @@
     </nav>
 
     <!-- Contenido principal -->
-    <main class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 min-h-screen px-4 py-2 w-full flex flex-col justify-between" id="main">
+    <main class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 min-h-screen px-4 py-2 w-full flex flex-col justify-between"
+      id="main">
       <div class="justify-center flex flex-col top-0 border-1 rounded-md p-4"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(imagenes/html-color-codes-color-tutorials-hero.jpg); background-size: cover;  background-position: center;">
-        <span class="md:text-3xl sm:text-2xl text-xl font-extrabold text-white py-2">Documentación de HTML, CSS y JavaScript</span>
+        <span class="md:text-3xl sm:text-2xl text-xl font-extrabold text-white py-2">Documentación de HTML, CSS y
+          JavaScript</span>
         <span class="md:text-xl text-xs text-gray-100 mt-1">Esta página está orientada a la documentación de HTML, sus
           atributos, elementos y TailwindCSS, el framework que se usa para la pagina.</span>
       </div>
@@ -119,12 +122,14 @@
         <div class="border-2 bg-gray-300  text-sm sm:text-base">
           &lt;html&gt;<br>
           <div class="border-2 mx-5 mb-5 border-gray-500 bg-gray-200">
-            &lt;head&gt;<br><div class="ml-2">Contiene metadatos e información sobre el documento que no se muestra
+            &lt;head&gt;<br>
+            <div class="ml-2">Contiene metadatos e información sobre el documento que no se muestra
               directamente en la página.</div>
             &lt;/head&gt;
           </div>
           <div class="border-2 border-gray-500 mx-5 bg-gray-200">
-            &lt;body&gt;<br><div class="ml-2">Contiene todo lo visible de la página web.</div>
+            &lt;body&gt;<br>
+            <div class="ml-2">Contiene todo lo visible de la página web.</div>
             &lt;/body&gt;
           </div>
           &lt;/html&gt;
@@ -134,23 +139,27 @@
   </div>
 
   <!-- Seccion de Etiquetas HTML -->
-  <section class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 bg-gradient-to-b px-4 from-gray-200 to-gray-400 min-h-screen sm:px-3 md:px-4 space-y-4" id="etiquetas">
+  <section
+    class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 bg-gradient-to-b px-4 from-gray-200 to-gray-400 min-h-screen sm:px-3 md:px-4 space-y-4" id="etiquetas">
     <h1 class="md:text-3xl sm:text-2xl text-xl py-2 font-extrabold text-black">Etiquetas de HTML</h1>
     <div class="relative overflow-auto max-h-svh md:h-dvh">
-      <table class="w-full bg-white rounded-lg rounded-r-none overflow-hidden">
-        <thead class="bg-gradient-to-r from-[#a80031] to-[#ffba03] text-black" style="position: sticky; top: 0; z-index: 10;">
+      <table class="w-full bg-white rounded-lg rounded-r-none border-gray-500 overflow-hidden">
+        <thead class="bg-gradient-to-r from-[#a80031] to-[#ffba03] text-black"
+          style="position: sticky; top: 0; z-index: 10;">
           <tr class="text-center">
             <th class="p-2">Tipo</th>
             <th class="py-2 px-2">Sintaxis</th>
-            <th class="py-2 px-2" >Función</th>
+            <th class="py-2 px-2">Función</th>
             <!-- <th class="py-2 px-2">Ejemplo</th> -->
           </tr>
         </thead>
         <tbody class="text-center bg-gray-200 ">
           <tr class="hover:bg-white border-gray-400 border-b-2">
-            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="3">Etiquetas Meta</td>
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="3">Etiquetas Meta
+            </td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;meta&gt;</td>
-            <td class="py-2 text-xs md:text-base px-0">Controlan cómo deben rastrear e indexar el contenido los buscadores</td>
+            <td class="py-2 text-xs md:text-base px-0">Controlan cómo deben rastrear e indexar el contenido los
+              buscadores</td>
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;title&gt;Titulo&lt;/title&gt;</td>
@@ -158,10 +167,12 @@
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;link rel="icon" href="favicon.ico"&gt;</td>
-            <td class="py-2 text-xs md:text-base px-0">Enlaza recursos externos como hojas de estilo CSS, iconos, fuentes, etc</td>
+            <td class="py-2 text-xs md:text-base px-0">Enlaza recursos externos como hojas de estilo CSS, iconos,
+              fuentes, etc</td>
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
-            <td class="py-2 font-medium px-2 sm:px-0 hover:bg-gray-100 bg-gray-300 border-gray-400 border-r-2 " rowspan="8">Texto </td>
+            <td class="py-2 font-medium px-2 sm:px-0 hover:bg-gray-100 bg-gray-300 border-gray-400 border-r-2 "
+              rowspan="8">Texto </td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;h1&gt;Texto&lt;/h1&gt; &lt;h6&gt;Texto&lt;/h6&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Seccionas mas grandes de nivel 1 a nivel 6</td>
             <!-- <td class="py-2">
@@ -180,126 +191,267 @@
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;span&gt;Texto&lt;/span&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Texto en linea. Sin estilos no es nada</td>
-          </tr> 
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;em&gt;Texto <em>enfatizado</em>&lt;/em&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Texto en enfatizados</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;strong&gt;Texto en <strong>negrita</strong>&lt;/strong&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Hace que el texto este en negrita</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;code&gt;console.log("Hola!")&lt;/code&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Establece codigo de programacion HTML, CSS,</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;i&gt;Texto en <i>cursiva</i>&lt;/i&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Muestra texto con cursiva</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">Realiza un &lt;br&gt;<br>salto de linea</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un salto de linea.</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="5">Etiquetas de Estructura</td>
-            <td class="py-2 text-sm px-2 sm:px-0">&lt;header&gt;   &lt;/header&gt;</td>
-            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un contenedor para contenido introductorio o enlaces de navegación</td>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="5">Etiquetas de
+              Estructura</td>
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;header&gt; &lt;/header&gt;</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un contenedor para contenido introductorio o
+              enlaces de navegación</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 text-sm px-2 sm:px-0">&lt;nav&gt;   &lt;/nav&gt;</td>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;nav&gt; &lt;/nav&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una barra de navegación.</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 text-sm px-2 sm:px-0">&lt;main&gt;  &lt;/main&gt;</td>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;main&gt; &lt;/main&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Especifica el contenido principal del documento</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 text-sm px-2 sm:px-0">&lt;section&gt;  &lt;/section&gt;</td>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;section&gt; &lt;/section&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Define una sección del documento</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;footer&gt;&lt;/footer&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Define un pie de página</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="8">Etiquetas de Enlaces e Imagenes</td>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="8">Etiquetas de
+              Enlaces e Imagenes</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;a&gt;href="(enlace)"&lt;/a&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Define un hipervinculo</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;img src="(imagen)"&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una imagen</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;picture&gt;&lt;/picture&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un contenedor para imagenes</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;figure&gt; &lt;/figura&gt;</td>
-            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Especifica contenido independiente, como ilustraciones, diagramas, fotos, etc</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Especifica contenido independiente, como ilustraciones,
+              diagramas, fotos, etc</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;figcaption&gt;&lt;/figcaption&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un pie de figura</td>
           </tr>
           <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
-            <td class="py-2 text-sm px-2 sm:px-0">&lt;audio src="(ejemplo)"&gt; &lt;/audio&gt;</td> 
+            <td class="py-2 text-sm px-2 sm:px-0">&lt;audio src="(ejemplo)"&gt; &lt;/audio&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa contenido de sonido</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;video src="(ejemplo)"&gt; &lt;/video&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa contenido de video</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;iframe src="(ejemplo)"&gt;&lt;/iframe&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un marco para mostrar contenido externo</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="8">Etiquetas de Formulario</td>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="8">Etiquetas de
+              Formulario</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;form&gt;&lt;/form&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un formulario</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;input type="text"&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un campo de entrada</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;button&gt;&lt;/button&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un boton</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;select&gt;&lt;/select&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un campo de seleccion</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;option&gt;&lt;/option&gt;</td>
-            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una opcion dentro de un campo de seleccion</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una opcion dentro de un campo de seleccion
+            </td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;textarea&gt;&lt;/textarea&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un campo de texto</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;label&gt;&lt;/label&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa una etiqueta para un campo de formulario</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;fieldset&gt;&lt;/fieldset&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un grupo de campos de formulario</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
-            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="3">Etiquetas de Script</td>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="3">Etiquetas de
+              Script</td>
             <td class="py-2 text-sm px-2 sm:px-0">&lt;script src="(archivo.js)"&gt;&lt;/script&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un script de JavaScript</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;noscript&gt;&lt;/noscript&gt;</td>
-            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa contenido alternativo para navegadores que no soportan JavaScript</td>
+            <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa contenido alternativo para navegadores que no
+              soportan JavaScript</td>
           </tr>
-          <tr class="hover:bg-gray-100 border-gray-400 border-b-2"> 
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
             <td class="py-2 text-sm px-2 sm:px-0">&lt;style&gt;&lt;/style&gt;</td>
             <td class="py-2 px-2 sm:px-0 md:text-base text-sm">Representa un contenedor de estilos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- Sección de Atributos HTML -->
+  <section class="md:ml-[14rem] pt-4 sm:ml-24 ml-20 bg-gray-200 bg-gradient-to-b px-4 from-gray-400 to-gray-600 min-h-screen sm:px-3 md:px-4 space-y-4"
+    id="atributos">
+    <h1 class="md:text-3xl sm:text-2xl text-xl py-2 font-extrabold text-black">Atributos de HTML</h1>
+    <p class="text-sm md:text-base">Los atributos HTML proporcionan información adicional sobre los elementos HTML y siempre se especifican en la etiqueta de inicio. Los atributos generalmente vienen en pares nombre/valor como: <code>nombre="valor"</code>.</p>
+
+    <div class="relative overflow-auto max-h-svh md:h-dvh">
+      <table class="w-full bg-white rounded-lg rounded-r-none overflow-hidden">
+        <thead class="bg-gradient-to-r from-[#2563eb] to-[#60a5fa] text-white"
+          style="position: sticky; top: 0; z-index: 10;">
+          <tr class="text-center">
+            <th class="p-2">Categoría</th>
+            <th class="py-2 px-2">Atributo</th>
+            <th class="py-2 px-2">Función</th>
+            <th class="py-2 px-2">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody class="text-center bg-gray-200">
+          <!-- Atributos Globales -->
+          <tr class="hover:bg-white border-gray-400 border-b-2">
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="5">Atributos
+              Globales</td>
+            <td class="py-2 text-sm px-2 sm:px-0">id="identificador"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica un ID único para un elemento</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;div id="header"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">class="nombre-clase"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica una o más clases para un elemento</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;p class="texto-rojo destacado"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">style="propiedad:valor;"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica un estilo CSS en línea para un elemento</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;p style="color:blue;"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">title="texto"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica información adicional sobre un elemento</td>
+            <td class="py-2 text-xs md:text-base px-0">
+              <code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">data-*="valor"</td>
+            <td class="py-2 text-xs md:text-base px-0">Almacena datos personalizados privados para la página o
+              aplicación</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;div data-user-id="123"&gt;</code></td>
+          </tr>
+
+          <!-- Atributos de Enlaces -->
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="4">Atributos de
+              Enlaces</td>
+            <td class="py-2 text-sm px-2 sm:px-0">href="URL"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica la URL de la página a la que va el enlace</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;a href="https://www.ejemplo.com"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">target="_blank"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica dónde abrir el documento enlazado</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;a href="url" target="_blank"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">rel="nofollow"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica la relación entre el documento actual y el enlazado
+            </td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;a href="url" rel="nofollow"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">download</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica que el destino será descargado</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;a href="archivo.pdf" download&gt;</code></td>
+          </tr>
+
+          <!-- Atributos de Imágenes -->
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="4">Atributos de
+              Imágenes</td>
+            <td class="py-2 text-sm px-2 sm:px-0">src="URL"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica la ruta a la imagen</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;img src="imagen.jpg"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">alt="texto"</td>
+            <td class="py-2 text-xs md:text-base px-0">Proporciona un texto alternativo para la imagen</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;img src="logo.png" alt="Logo de la empresa"&gt;</code>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">width="valor"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica el ancho de la imagen</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;img src="img.jpg" width="500"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">height="valor"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica la altura de la imagen</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;img src="img.jpg" height="300"&gt;</code></td>
+          </tr>
+
+          <!-- Atributos de Formularios -->
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="5">Atributos de
+              Formularios</td>
+            <td class="py-2 text-sm px-2 sm:px-0">type="valor"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica el tipo de elemento de entrada</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;input type="text"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">name="nombre"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica el nombre de un elemento de formulario</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;input type="text" name="username"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">value="texto"</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica el valor inicial de un elemento de formulario</td>
+            <td class="py-2 text-xs md:text-base px-0">
+              <code>&lt;input type="text" value="Valor predeterminado"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">placeholder="texto"</td>
+            <td class="py-2 text-xs md:text-base px-0">Proporciona una pista sobre lo que se espera en el campo</td>
+            <td class="py-2 text-xs md:text-base px-0">
+              <code>&lt;input type="text" placeholder="Ingrese su nombre"&gt;</code></td>
+          </tr>
+          <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+            <td class="py-2 text-sm px-2 sm:px-0">required</td>
+            <td class="py-2 text-xs md:text-base px-0">Especifica que un campo de entrada debe ser completado</td>
+            <td class="py-2 text-xs md:text-base px-0"><code>&lt;input type="text" required&gt;</code></td>
           </tr>
         </tbody>
       </table>

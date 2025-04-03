@@ -1,0 +1,126 @@
+<!-- Sección de Atributos HTML -->
+<section class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-200 bg-gradient-to-b px-4 from-gray-200 to-gray-300 min-h-screen sm:px-3 md:px-4 space-y-4" id="atributos">
+  <h1 class="md:text-3xl sm:text-2xl text-xl py-2 font-extrabold text-black">Atributos de HTML</h1>
+  <p class="text-sm md:text-base">Los atributos HTML proporcionan información adicional sobre los elementos HTML y siempre se especifican en la etiqueta de inicio. Los atributos generalmente vienen en pares nombre/valor como: <code>nombre="valor"</code>.</p>
+  
+  <div class="relative overflow-auto max-h-svh md:h-dvh">
+    <table class="w-full bg-white rounded-lg rounded-r-none overflow-hidden">
+      <thead class="bg-gradient-to-r from-[#2563eb] to-[#60a5fa] text-white" style="position: sticky; top: 0; z-index: 10;">
+        <tr class="text-center">
+          <th class="p-2">Categoría</th>
+          <th class="py-2 px-2">Atributo</th>
+          <th class="py-2 px-2">Función</th>
+          <th class="py-2 px-2">Ejemplo</th>
+        </tr>
+      </thead>
+      <tbody class="text-center bg-gray-200">
+        <!-- Atributos Globales -->
+        <tr class="hover:bg-white border-gray-400 border-b-2">
+          <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="5">Atributos Globales</td>
+          <td class="py-2 text-sm px-2 sm:px-0">id="identificador"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica un ID único para un elemento</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;div id="header"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">class="nombre-clase"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica una o más clases para un elemento</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;p class="texto-rojo destacado"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">style="propiedad:valor;"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica un estilo CSS en línea para un elemento</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;p style="color:blue;"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">title="texto"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica información adicional sobre un elemento</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">data-*="valor"</td>
+          <td class="py-2 text-xs md:text-base px-0">Almacena datos personalizados privados para la página o aplicación</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;div data-user-id="123"&gt;</code></td>
+        </tr>
+        
+        <!-- Atributos de Enlaces -->
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="4">Atributos de Enlaces</td>
+          <td class="py-2 text-sm px-2 sm:px-0">href="URL"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica la URL de la página a la que va el enlace</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;a href="https://www.ejemplo.com"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">target="_blank"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica dónde abrir el documento enlazado</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;a href="url" target="_blank"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">rel="nofollow"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica la relación entre el documento actual y el enlazado</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;a href="url" rel="nofollow"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">download</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica que el destino será descargado</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;a href="archivo.pdf" download&gt;</code></td>
+        </tr>
+        
+        <!-- Atributos de Imágenes -->
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="4">Atributos de Imágenes</td>
+          <td class="py-2 text-sm px-2 sm:px-0">src="URL"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica la ruta a la imagen</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;img src="imagen.jpg"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">alt="texto"</td>
+          <td class="py-2 text-xs md:text-base px-0">Proporciona un texto alternativo para la imagen</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;img src="logo.png" alt="Logo de la empresa"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">width="valor"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica el ancho de la imagen</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;img src="img.jpg" width="500"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">height="valor"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica la altura de la imagen</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;img src="img.jpg" height="300"&gt;</code></td>
+        </tr>
+        
+        <!-- Atributos de Formularios -->
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 font-medium px-2 sm:px-0 bg-gray-300 border-gray-400 border-r-2" rowspan="5">Atributos de Formularios</td>
+          <td class="py-2 text-sm px-2 sm:px-0">type="valor"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica el tipo de elemento de entrada</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;input type="text"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">name="nombre"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica el nombre de un elemento de formulario</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;input type="text" name="username"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">value="texto"</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica el valor inicial de un elemento de formulario</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;input type="text" value="Valor predeterminado"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">placeholder="texto"</td>
+          <td class="py-2 text-xs md:text-base px-0">Proporciona una pista sobre lo que se espera en el campo</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;input type="text" placeholder="Ingrese su nombre"&gt;</code></td>
+        </tr>
+        <tr class="hover:bg-gray-100 border-gray-400 border-b-2">
+          <td class="py-2 text-sm px-2 sm:px-0">required</td>
+          <td class="py-2 text-xs md:text-base px-0">Especifica que un campo de entrada debe ser completado</td>
+          <td class="py-2 text-xs md:text-base px-0"><code>&lt;input type="text" required&gt;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</qodoArtifact>
+
+## 2. Sección de TailwindCSS
+
+Esta sección es muy relevante ya que estás usando TailwindCSS en tu página. Puedes organizarla por categorías de utilidades.
