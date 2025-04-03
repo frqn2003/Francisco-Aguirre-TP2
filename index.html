@@ -19,6 +19,27 @@
       outline: 2px solid #60a5fa;
       outline-offset: 2px;
     }
+    
+    /* Estilos personalizados para barras de desplazamiento */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 15px;
+      height: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #d1d5db;
+      border-radius: 0px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #4b5563;
+      border-radius: 0px;
+      border: 2px solid #d1d5db;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #374151;
+    }
   </style>
 </head>
 
@@ -92,8 +113,8 @@
     <!-- Contenido principal -->
     <main class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-600 min-h-screen px-4 py-2 w-full flex flex-col justify-between"
       id="main">
-      <div class="justify-center flex flex-col top-0 border-1 rounded-md p-4"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(imagenes/html-color-codes-color-tutorials-hero.jpg); background-size: cover;  background-position: center;">
+      <div class="justify-center flex flex-col top-0 border-1 rounded-md p-4 object-cover"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(imagenes/html-color-codes-color-tutorials-hero.jpg);   background-position: center;">
         <span class="md:text-3xl sm:text-2xl text-xl font-extrabold text-white py-2">Documentación de HTML, CSS y
           JavaScript</span>
         <span class="md:text-xl text-xs text-gray-100 mt-1">Esta página está orientada a la documentación de HTML, sus
@@ -144,7 +165,7 @@
     class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-600 px-4 min-h-screen sm:px-3 md:px-4 space-y-4"
     id="etiquetas">
     <h1 class="font-extrabold text-black rounded border-2 p-2 text-xl sm:text-2xl md:text-3xl mb-3 bg-white">Etiquetas de HTML</h1>
-    <div class="relative overflow-auto max-h-svh md:h-dvh">
+    <div class="relative overflow-auto max-h-svh md:h-dvh custom-scrollbar">
       <table class="w-full bg-white rounded-lg rounded-r-none border-gray-500 overflow-hidden">
         <thead class="bg-gradient-to-r from-[#a80031] to-[#ffba03] text-black"
           style="position: sticky; top: 0; z-index: 10;">
@@ -334,7 +355,7 @@
     <p class="text-sm md:text-base text-gray-100">Los atributos HTML proporcionan información adicional sobre los elementos HTML y
       siempre se especifican en la etiqueta de inicio.</p>
 
-    <div class="relative overflow-auto max-h-svh md:h-dvh">
+    <div class="relative overflow-auto max-h-svh md:h-dvh custom-scrollbar">
       <table class="w-full bg-white rounded-lg rounded-r-none overflow-hidden">
         <thead class="bg-gradient-to-r from-[#2563eb] to-[#60a5fa] text-white"
           style="position: sticky; top: 0; z-index: 10;">
@@ -469,10 +490,9 @@
   <section
     class="md:ml-[14rem] sm:ml-24 ml-20 bg-gray-600 px-4 min-h-screen sm:px-3 md:px-4 space-y-4 pt-4"
     id="tailwind">
-    <h1 class="font-extrabold text-black rounded border-2 p-2 text-xl sm:text-2xl md:text-3xl mb-3 bg-white">TailwindCSS</h1>
+    <h1 class="font-extrabold text-white rounded border-2 border-gray-500 p-2 text-xl sm:text-2xl md:text-3xl mb-3 bg-black object-cover items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(header.webp); "> TailwindCSS</h1>
     <p class="text-sm md:text-base text-gray-200">TailwindCSS es un framework CSS de utilidad que permite construir
-      diseños personalizados sin salir de tu HTML. A diferencia de otros frameworks como Bootstrap, Tailwind no
-      proporciona componentes prediseñados, sino clases de utilidad que se pueden combinar para crear cualquier diseño.
+      diseños personalizados sin salir de tu HTML.
     </p>
 
     <!-- Introducción con ejemplo visual -->
@@ -590,11 +610,36 @@
               </div>
             </div>
           </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Grid col -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <h3 class="text-blue-400 font-semibold mb-2">Grids</h3>
+              <code class="text-xs md:text-sm text-gray-300">grid, grid-cols-[numero], col-span-[numero], col-start-[numero]</code>
+              <div class="mt-2 flex flex-col space-y-2">
+                <div class="grid grid-cols-5 bg-gray-700 rounded">
+                  <div class="bg-blue-500 text-white p-2 text-xs rounded w-1/3">1</div>
+                  <div class="bg-blue-500 text-white col-span-2 p-2 text-xs rounded w-1/3">2</div>
+                  <div class="bg-blue-500 text-white p-2 text-xs col-start-4 rounded w-1/3">3</div>
+                </div>
+                <code class="text-xs text-gray-400">grid grid-cols-5 col-span-2 col-start-4</code>
+              </div>
+            </div>
+            <!-- Grid row -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <h3 class="text-blue-400 font-semibold mb-2">Grids</h3>
+              <code class="text-xs md:text-sm text-gray-300">grid, grid-rows-[numero], row-span-[numero], row-start-[numero]</code>
+                <div class="grid grid-rows-4 bg-gray-700 rounded space-y-2 my-2">
+                  <div class="bg-blue-500 text-white p-2 text-xs rounded">1</div>
+                  <div class="bg-blue-500 text-white row-span-2 p-2 text-xs rounded">2</div>
+                  <div class="bg-blue-500 text-white p-2 text-xs row-start-4 rounded">3</div>
+                </div>
+                <code class="text-xs text-gray-400">grid grid-rows-5 row-span-2 row-start-4</code>
+          </div>
         </div>
       </div>
 
       <!-- Espaciado y Tamaño -->
-      <div class="bg-gray-900 rounded-lg p-4 shadow-lg">
+      <div class="bg-gray-900 rounded-lg py-4 shadow-lg">
         <h2 class="text-xl font-bold text-white mb-4">Espaciado y Tamaño</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <!-- Margin -->
@@ -631,7 +676,7 @@
       </div>
 
       <!-- Tipografía -->
-      <div class="bg-gray-900 rounded-lg p-4 shadow-lg">
+      <div class="bg-gray-900 rounded-lg py-4 shadow-lg">
         <h2 class="text-xl font-bold text-white mb-4">Tipografía</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <!-- Font Size -->
@@ -663,7 +708,7 @@
       </div>
 
       <!-- Colores -->
-      <div class="bg-gray-900 rounded-lg p-4 shadow-lg">
+      <div class="bg-gray-900 rounded-lg py-4 shadow-lg">
         <h2 class="text-xl font-bold text-white mb-4">Colores</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2">
           <div class="flex flex-col items-center">
@@ -719,7 +764,7 @@
       </div>
 
       <!-- Componentes Comunes -->
-      <div class="bg-gray-900 rounded-lg p-4 shadow-lg">
+      <div class="bg-gray-900 rounded-lg py-4 shadow-lg">
         <h2 class="text-xl font-bold text-white mb-4">Componentes Comunes</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <!-- Botones -->
